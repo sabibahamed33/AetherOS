@@ -27,7 +27,7 @@ jobs:
         run: python -m pytest tests/aetheros_platform/test_linux_platform.py -q
       - name: Desktop-entry contract check
         run: python scripts/linux_desktop_entry_check.py
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
       - name: Electron session detection tests
